@@ -6,9 +6,159 @@
 }
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'DM Sans', sans-serif;;
     background-color: var(--bgcolor);
+    scroll-behavior: smooth;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.wsred {
+    color:var(--ws31red);
+}
+#logo__in__navbar {
+    display: flex;
+
+}
+#logo__in__navbar img {
+
+}
+#logo__in__navbar p {
+    margin: 0;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+#navbar__links {
+    display: flex;
+    gap: 20px;
+}
+
+#navbar__links a {
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+#navbar__links a:hover {
+    color: var(--bgcolor);
+    background-color: var(--ws31red);
+    padding: 8px 16px;
+}
+
+#landing__page {
+    height: 800px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+#landing__page__content {
+    height: 100%;
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#robot {
+    font-size: 30px;
+    margin-right: 15px;
+    position: relative;
+    top: 3px;
+}
+
+#landing__page__content p {
+}
+#landing__page__content h1{
+    font-size: 88px;
+    line-height: 88px;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+}
+#landing__page__content h4{
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+#landing__page__content button{
+    padding: 16px 32px;
+    border: none;
+    background-color: var(--ws31red);
+    color: var(--bgcolor);
+}
+#landing__page__content button:hover{
+    background-color: black;
+    color: var(--bgcolor);
+}
+
+#slider {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 100px;
+}
+
+#slider div {
+    width: 380px;
+    height: 380px;
+    flex-shrink: 0;
+    animation: slide 20s linear infinite; /* Justera tiden efter behov */
+}
+
+@keyframes slide {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(-100%); } /* Ändra detta värde för att kontrollera rörelseavståndet */
+}
+
+#box__one {
+    background-color: #a3f7b5;
+}
+#box__two {
+    background-color: #a3f7b5;
+}
+#box__three {
+    background-color: #a3f7b5;
+}
+#box__four {
+    background-color: #a3f7b5;
+}
+#box__five {
+    background-color: #a3f7b5;
+}
+#box__six {
+    background-color: #a3f7b5;
+}
+#box__seven {
+    background-color: #a3f7b5;
+}
+#box__eight {
+    background-color: #a3f7b5;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 120px;
 }
