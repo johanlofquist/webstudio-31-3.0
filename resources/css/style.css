@@ -3,6 +3,10 @@
   --bgcolor: #fdfbf5;
   --ws31red: #b90001;
   --ws31green: #a3f7b5;
+  --ws31pink: #DB174B;
+  --ws31purple: #5D31EB;
+  --ws31yellow: #CEF745;
+  --ws31teal: #6FF7D3;
 }
 * {
   box-sizing: border-box;
@@ -130,10 +134,16 @@ body {
 }
 
 #slider div {
+  position: relative;
   width: 380px;
   height: 380px;
   flex-shrink: 0;
   animation: slide 20s linear infinite; /* Justera tiden efter behov */
+  transition: bottom 200ms ease-out;
+  bottom: 0px;
+}
+#slider div:hover {
+  bottom: 15px;
 }
 
 @keyframes slide {
@@ -147,7 +157,7 @@ body {
 }
 
 #box__one {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,7 +167,7 @@ body {
   box-shadow: 4px 4px 4px #757575;
 }
 #box__two {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -167,7 +177,7 @@ body {
   box-shadow: 4px 4px 4px #757575;
 }
 #box__three {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,7 +187,7 @@ body {
   box-shadow: 4px 4px 4px #757575;
 }
 #box__four {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -187,7 +197,7 @@ body {
   box-shadow: 4px 4px 4px #757575;
 }
 #box__five {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +207,7 @@ body {
   box-shadow: 4px 4px 4px #757575;
 }
 #box__six {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -207,7 +217,7 @@ body {
   box-shadow: 4px 4px 4px #757575;
 }
 #box__seven {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,7 +227,7 @@ body {
   box-shadow: 4px 4px 4px #757575;
 }
 #box__eight {
-  background-color: #a5a5a5;
+  background-color: var(--ws31green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +243,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #141414;
+  background-color: #2a2a2a;
   color: white;
   padding: 100px;
 }
@@ -280,17 +290,17 @@ body {
     background-color: var(--ws31green);
 }
 #grid__three {
-    background-color: #5D31EB;
+    background-color: var(--ws31purple);
     color: white;
 }
 #grid__four {
-    background-color: #CEF745;
+    background-color: var(--ws31yellow);
 }
 #grid__five {
-    background-color: #6FF7D3;
+    background-color: var(--ws31teal);
 }
 #grid__six {
-    background-color: #DB174B;
+    background-color: var(--ws31pink);
     color: white;
 }
 

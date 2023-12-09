@@ -18,4 +18,5 @@ mosquito.addEventListener("click", function(){
     clearInterval(interval)
     let squish = new Audio("/resources/img/squish.mp3");
     squish.play();
+    mosquito.src = "resources/img/deadmygga.svg"
 })
