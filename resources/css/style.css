@@ -110,8 +110,8 @@ body {
   color: var(--bgcolor);
 }
 
-#pixel__robot {
-  width: 150px;
+#mosquito {
+  width: 50px;
   position: absolute;
   right: 200px;
   top: 500px;
