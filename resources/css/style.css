@@ -25,6 +25,8 @@ body {
   position: sticky;
   top: 0;
   z-index: 1;
+  width: 90%;
+  margin: 0 auto;
 }
 .wsred {
   color: var(--ws31red);
@@ -176,7 +178,7 @@ body {
   align-items: center;
   background-color: #141414;
   color: white;
-  padding: 120px;
+  padding: 100px;
 }
 
 #roller {
@@ -201,30 +203,67 @@ body {
   text-align: center;
 }
 
-#services__container {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 60px;
+#services__grid {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.services__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.services__wrapper p {
-  width: 300px;
+#services__grid > div {
+    height: 350px;
+    width: 33.33%;
 }
 
-.icon__container {
-  width: 128px;
-  height: 128px;
-  background-color: #a3f7b5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 80px;
-  color: black;
+#grid__one {
+    background-color: var(--ws31red);
+    color: white;
+}
+#grid__two {
+    background-color: var(--ws31green);
+}
+#grid__three {
+    background-color: #5D31EB;
+    color: white;
+}
+#grid__four {
+    background-color: #CEF745;
+}
+#grid__five {
+    background-color: #6FF7D3;
+}
+#grid__six {
+    background-color: #DB174B;
+    color: white;
+}
+
+#grid__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    
+}
+#grid__wrapper i {
+    font-size: 36px;
+    margin-left: 40px;
+
+}
+#grid__wrapper h3 {
+    font-size: 32px;
+    margin: 20px 0;
+    font-weight: 400;
+    margin-left: 40px;
+}
+#grid__wrapper p {
+    margin: 0;
+    font-size: 20px;
+    width: 80%;
+    font-weight: 300;
+    margin-left: 40px;
+}
+
+#about {
+    height: 500px;
 }

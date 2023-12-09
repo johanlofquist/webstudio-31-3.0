@@ -2,7 +2,7 @@ let mosquito = document.querySelector("#mosquito");
 let x = 200;
 let y = 500;
 
-setInterval(fly, 5);
+let interval = setInterval(fly, 5);
 
 function fly() {
   let randomX = Math.floor(Math.random() * 5) - 2;
@@ -13,3 +13,9 @@ function fly() {
   mosquito.style.right = x + "px";
   console.log(randomX);
 }
+
+mosquito.addEventListener("click", function(){
+    clearInterval(interval)
+    let squish = new Audio("/resources/img/squish.mp3");
+    squish.play();
+})
