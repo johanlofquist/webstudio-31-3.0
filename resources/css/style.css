@@ -115,6 +115,7 @@ body {
   position: absolute;
   right: 200px;
   top: 500px;
+  z-index: 2;
 }
 
 #slider {
