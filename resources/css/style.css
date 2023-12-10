@@ -364,3 +364,78 @@ body {
 #about__text__wrapper p {
   font-size: 18;
 }
+
+#contact {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding-top: 100px;
+  padding-bottom: 180px;
+}
+
+#contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: white;
+  gap: 40px;
+}
+#contact__wrapper i {
+  color: white;
+  font-size: 66px;
+}
+
+#contact__wrapper a {
+
+}
+
+.contact__person {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact__person {
+  display: flex;
+  flex-direction: column;
+}
+.contact__person h2 {
+  font-size: 36px;
+  margin: 0;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.contact__person h3 {
+  margin: 0;
+  font-weight: 300;
+}
+.contact__person a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+#copyright {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 10px;
+  color: white;
+}
+
+#copyright i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+#copyright p {
+  font-size: 24px;
+}
+
+#map {
+
+}
