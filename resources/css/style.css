@@ -139,7 +139,7 @@ body {
   width: 380px;
   height: 380px;
   flex-shrink: 0;
-  animation: slide 40s linear infinite; /* Justera tiden efter behov */
+  animation: slide 20s linear infinite;
   transition: bottom 200ms ease-out;
   bottom: 0px;
 }
@@ -153,7 +153,7 @@ body {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(-500%);
+    transform: translateX(-200%);
   } /* Ändra detta värde för att kontrollera rörelseavståndet */
 }
 
@@ -437,5 +437,392 @@ body {
 }
 
 #map {
+  width: 600px;
+  height: 450px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  
+  #navbar {
+    display: none;
+  }
+
+  #landing__page {
+    height: 100vh;
+  }
+  
+  #landing__page__content {
+    height: 100%;
+    position: relative;
+    bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #landing__page__content h1 {
+    font-size: 48px;
+    line-height: 48px;
+  }
+  #landing__page__content h4 {
+    font-size: 16px;
+
+  }
+  #landing__page__content button {
+    padding: 14px 28px;
+    border: none;
+    background-color: var(--ws31red);
+    color: var(--bgcolor);
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  #landing__page__content button:hover {
+    background-color: black;
+    color: var(--bgcolor);
+  }
+  
+  #mosquito {
+    width: 40px;
+    position: absolute;
+    right: 200px;
+    top: 500px;
+    z-index: 2;
+  }
+  
+  #slider {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    padding: 50px;
+  }
+  
+  #slider div {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    flex-shrink: 0;
+    animation: slide 30s linear infinite;
+    transition: bottom 200ms ease-out;
+    bottom: 0px;
+  }
+  #slider div:hover {
+    bottom: 15px;
+  }
+  
+  @keyframes slide {
+    0%,
+    100% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(-400%);
+    } /* Ändra detta värde för att kontrollera rörelseavståndet */
+  }
+  
+  #box__one {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__one img{
+    height: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  #box__two {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__two img{
+    width: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  #box__three {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__three img{
+    height: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  #box__four {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__four img{
+    height: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  #box__five {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__five img{
+    height: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  #box__six {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__six img{
+    width: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  #box__seven {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__seven img{
+    height: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  #box__eight {
+    background-color: var(--ws31green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #box__eight img{
+    height: 90%;
+    box-shadow: 4px 4px 4px #757575;
+  }
+  
+  
+  #services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2a2a2a;
+    color: white;
+    padding: 50px;
+  }
+  
+  #roller {
+    font-size: 30px;
+    margin-right: 15px;
+    position: relative;
+    top: 3px;
+  }
+  
+  #services p {
+    font-weight: 300;
+    text-align: center;
+  }
+  #services h1 {
+    font-size: 48px;
+    margin: 0;
+    margin-top: 10px;
+  }
+  #services h3 {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  #services__grid {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+  }
+  
+  #services__grid > div {
+      height: unset;
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+  }
+  
+  #grid__one {
+      background-color: var(--ws31red);
+      color: white;
+  }
+  #grid__two {
+      background-color: var(--ws31green);
+  }
+  #grid__three {
+      background-color: var(--ws31purple);
+      color: white;
+  }
+  #grid__four {
+      background-color: var(--ws31yellow);
+  }
+  #grid__five {
+      background-color: var(--ws31teal);
+  }
+  #grid__six {
+      background-color: var(--ws31pink);
+      color: white;
+  }
+  
+  #grid__wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      
+  }
+  #grid__wrapper i {
+      font-size: 36px;
+      margin-left: 40px;
+  
+  }
+  #grid__wrapper h3 {
+      font-size: 32px;
+      margin: 20px 0;
+      font-weight: 400;
+      margin-left: 40px;
+  }
+  #grid__wrapper p {
+      margin: 0;
+      font-size: 20px;
+      width: 80%;
+      font-weight: 300;
+      margin-left: 40px;
+  }
+  
+  #about {
+      height: unset;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  #about__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  #about__wrapper img {
+    width: 50vw;
+  }
+  
+  #about__text__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+  }
+  #about__text__wrapper h1{
+    font-size: 48px;
+    margin: 0;
+    text-align: center;
+  
+  }
+  #about__text__wrapper p {
+    font-size: 14px;
+    text-align: center;
+    width: 80%;
+
+  }
+  
+  #contact {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #2a2a2a;
+    padding-top: 70px;
+    padding-bottom: 120px;
+  }
+  
+  #contact__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    gap: 40px;
+  }
+  #contact__wrapper i {
+    color: white;
+    font-size: 66px;
+  }
+  
+  #contact__wrapper a {
+  
+  }
+  
+  .contact__person {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .contact__person {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact__person h2 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .contact__person h3 {
+    margin: 0;
+    font-weight: 300;
+  }
+  .contact__person a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+  }
+  
+  #copyright {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    color: white;
+  }
+  
+  #copyright i {
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  #copyright p {
+    font-size: 24px;
+  }
+
+  #map {
+    width: 80%;
+    height: 400px;
+    margin-top: 50px;
+  }
 
 }
