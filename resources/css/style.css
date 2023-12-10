@@ -333,5 +333,34 @@ body {
 }
 
 #about {
-    height: 500px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+#about__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+#about__wrapper img {
+  width: 300px;
+  box-shadow: 3px 3px 3px rgb(109, 109, 109);
+}
+
+#about__text__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+}
+#about__text__wrapper h1{
+  font-size: 60px;
+  margin: 0;
+
+}
+#about__text__wrapper p {
+  font-size: 18;
 }
