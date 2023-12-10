@@ -21,6 +21,10 @@ body {
   scroll-behavior: smooth;
 }
 
+#hamburger__menu {
+  display: none;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
@@ -471,6 +475,7 @@ body {
   #landing__page__content h1 {
     font-size: 48px;
     line-height: 48px;
+    margin-top: 0;
   }
   #landing__page__content h4 {
     font-size: 16px;
@@ -826,3 +831,133 @@ body {
   }
 
 }
+
+/* Hamburger menu logo */
+
+#hamburger__menu {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: black;
+  z-index: 3;
+}
+
+#line__one {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+  height: 3px;
+  background: black;
+  transition: all .3s;
+  position: absolute;
+  top: 0px;
+}
+
+#line__two {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 10px 0 rgba(0,0,0,0.3);
+  height: 3px;
+  background: black;
+  transition: all .3s;
+  position: absolute;
+  top: 10px;
+}
+
+.burgerSpinOneToX {
+  animation: burgerSpinOneToX 500ms forwards;
+}
+
+.burgerSpinTwoToX {
+  animation: burgerSpinTwoToX 500ms forwards;
+}
+
+.burgerSpinOneBack {
+  animation: burgerSpinOneBack 500ms forwards;
+}
+
+.burgerSpinTwoBack {
+  animation: burgerSpinTwoBack 500ms forwards;
+}
+
+@keyframes burgerSpinOneToX {
+  0% {
+    top: 0px;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: 5px;
+    transform: rotate(0deg)
+  }
+
+  100% {
+    top: 5px;
+    transform: rotate(-45deg)
+  }
+  
+}
+
+@keyframes burgerSpinTwoToX {
+
+  0% {
+    top: 10px;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    top: 5px;
+    transform: rotate(0deg)
+  }
+
+  100% {
+    top: 5px;
+    transform: rotate(45deg)
+  }
+
+  
+  
+}
+
+@keyframes burgerSpinOneBack {
+  0% {
+    top: 5px;
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    top: 5px;
+    transform: rotate(0deg)
+  }
+
+  100% {
+    top: 0px;
+    transform: rotate(0deg)
+  }
+  
+}
+
+@keyframes burgerSpinTwoBack {
+
+  0% {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+
+  50% {
+    top: 5px;
+    transform: rotate(0deg)
+  }
+
+  100% {
+    top: 10px;
+    transform: rotate(0deg)
+  }
+
+  
+  
+}
+

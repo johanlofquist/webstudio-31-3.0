@@ -12,7 +12,6 @@ function fly() {
   y += randomY;
   mosquito.style.top = y + "px";
   mosquito.style.right = x + "px";
-  console.log(randomSize);
 }
 
 mosquito.addEventListener("click", function(){
@@ -21,3 +20,26 @@ mosquito.addEventListener("click", function(){
     squish.play();
     mosquito.src = "resources/img/deadmygga.svg"
 })
+
+let burgerMenu = document.querySelector("#hamburger__menu")
+let lineOne = document.querySelector("#line__one")
+let lineTwo = document.querySelector("#line__two")
+
+let isToggled = false
+
+burgerMenu.addEventListener("click", function() {
+  if (isToggled == false) { 
+  lineOne.classList.remove("burgerSpinOneBack");
+  lineTwo.classList.remove("burgerSpinTwoBack");
+  lineOne.classList.add("burgerSpinOneToX");
+  lineTwo.classList.add("burgerSpinTwoToX");
+  isToggled = true
+  } else {
+    lineOne.classList.remove("burgerSpinOneToX");
+    lineTwo.classList.remove("burgerSpinTwoToX");
+    lineOne.classList.add("burgerSpinOneBack");
+    lineTwo.classList.add("burgerSpinTwoBack");
+    isToggled = false
+  }
+})
+
